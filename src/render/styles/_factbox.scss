@@ -13,11 +13,12 @@
 }
 
 .factbox__text {
-    p {
+    p, li {
         overflow: hidden;
     }
 
-    p.is-collapsed {
+    p.is-collapsed,
+    li.is-collapsed, {
         height: 0;
         margin: 0;
     }
