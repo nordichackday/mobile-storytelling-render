@@ -1,11 +1,13 @@
 .image-section {
-	border-top: solid 1px #666;
+	margin-top: 1.5em;
+	padding-top: 1px;
+	border-top: solid 1px #000;
 }
 
 .image-section__figcaption {
     @include font-size(20);
     padding: 0.5em 0 0.5em 1em;
     background-color: rgba(0,0,0,1);
-    border-top: solid 1px #666;
+    border-top: solid 1px #ddd;
     color: white;    
 }
