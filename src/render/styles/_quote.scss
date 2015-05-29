@@ -1,0 +1,15 @@
+.quote {
+    margin-top: 2em;
+    
+    p {
+        display: inline;
+    }
+}
+
+.quote__sign {
+    font-weight: bold;
+}
+
+.quote__person {
+    border-top: 1px solid;
+}

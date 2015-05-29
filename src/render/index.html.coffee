@@ -22,10 +22,21 @@ div class:'article__content', ->
                 text section.title
               div class:'factbox__text js-extendable', ->
                 text section.body
+          when 'direct_qoute'
+            div class:'quote', ->
+              span class:'quote__sign', ->
+                text '"'
+              text section.body
+              span class:'quote__sign', ->
+                text '"'
+            span class:'quote__person', ->
+              text section.title
       when 'panel_image'
         for image in section.images
           figure class:'image-section', ->
-            img src:image.large, alt:'some alt text', class:'image-section__image'
+            srcset = "#{image.small} 320w,#{image.medium} 800w,#{image.large} 800w"
+            sizes="99vw"
+            img srcset: srcset, src:image.large, alt:'some alt text', class:'image-section__image'
             figcaption class:'image-section__figcaption', ->
               text 'Some caption text'
 
