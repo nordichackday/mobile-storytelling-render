@@ -15,7 +15,7 @@ module.exports = {
 		{
 			type: 'factbox',
 			title: 'Berlin wall',
-			body: '<li>The Eastern Germany government called the wall the Anti-Fascist Protection Rampart. The Western Germans often referred to it as the Wall of Shame.</li><li>Around 20% of the East German population left the country in the years leading up to the building of the wall.</li><li>The country of East Germany was officially called the German Democratic Republic or GDR.</li><li>There were also many guard towers along the wall. Guards were ordered to shoot anyone attempting to escape.</li><li>It is estimated that around 5000 people escaped over or through the wall during the 28 years it stood. Around 200 were killed trying to escape.</li>'
+			body: '<p>The Eastern Germany government called the wall the Anti-Fascist Protection Rampart. The Western Germans often referred to it as the Wall of Shame.</p><p>Around 20% of the East German population left the country in the years leading up to the building of the wall.</p><p>The country of East Germany was officially called the German Democratic Republic or GDR.</p><p>There were also many guard towers along the wall. Guards were ordered to shoot anyone attempting to escape.</p><p>It is estimated that around 5000 people escaped over or through the wall during the 28 years it stood. Around 200 were killed trying to escape.</p>'
 		},
 		{
 			type: 'blockquote',
