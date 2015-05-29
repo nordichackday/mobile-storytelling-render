@@ -47,3 +47,6 @@ div class:'article__content', ->
         div class:'video-section', ->
           embedUrl = 'https://www.youtube.com/embed/' + section.youtube_link
           iframe src:embedUrl, frameborder:'0', allowfullscreen:'allowfullscreen', class:'video-section__iframe'
+
+  span class:'article__end', ->
+    text "- // -"
