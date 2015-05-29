@@ -117,10 +117,15 @@ docpadConfig =
 				site:
 					url: false
 
-	plugins: [
+	plugins: 
+		feedr:
+			feeds:
+				api:
+					url: 'http://litlabrekka.isproject.is/api/story/r?nid=16'
+					
 		sass: 
-			outputStyle: 'compressed'
-	]
+			outputStyle: 'compressed'			
+		
 					
 					
 	# =================================
