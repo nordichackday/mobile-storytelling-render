@@ -1,11 +1,13 @@
 .factbox {
     margin-top: 2em;
-    padding: 1em;
-    @include font-size(14);
+    padding: 1.0em;
+    @include font-size(20);
     background-color: #444;
     color: white;
 }
 
 .factbox__heading {
     margin: 0;
+    text-transform: uppercase;
+    @include font-size(28);
 }
