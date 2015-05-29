@@ -2,7 +2,9 @@
 layout: 'default'
 ---
 style ->
-  text ".header {background-image: url(" + '/images/berlin-wall.png' + ");}"
+  #if @feedr.feeds.api.image
+  backgroundImg = @feedr.feeds.api.image || '/images/berlin-wall.png'
+  text ".header {background-image: url(" + backgroundImg + ");}"
 
 header class:"header", ->
   h1 class:"header__heading", ->
@@ -32,6 +34,7 @@ div class:'article__content', ->
             span class:'quote__person', ->
               text section.title
       when 'panel_image'
+
         for image in section.images
           figure class:'image-section', ->
             srcset = "#{image.small} 320w,#{image.medium} 800w,#{image.large} 800w"
