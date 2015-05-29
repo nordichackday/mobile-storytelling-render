@@ -121,7 +121,7 @@ docpadConfig =
 		feedr:
 			feeds:
 				api:
-					url: 'http://litlabrekka.isproject.is/api/story/r?nid=16'
+					url: 'http://litlabrekka.isproject.is/api/story/r?nid=26'
 					
 		sass: 
 			outputStyle: 'compressed'			
