@@ -9,3 +9,14 @@
 .factbox__heading {
     margin: 0;
 }
+
+.factbox__text {
+    p {
+        overflow: hidden;
+    }
+
+    p.is-collapsed {
+        height: 0;
+        margin: 0;
+    }
+}
