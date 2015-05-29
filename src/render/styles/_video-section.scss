@@ -1,7 +1,12 @@
 .video-section {
     margin-top: 1.5em;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 .video-section__iframe {
     width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #ccc;       
 }
