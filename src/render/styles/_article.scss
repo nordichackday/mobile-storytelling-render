@@ -9,3 +9,8 @@
     color: #222;
     padding-bottom: 10em;
 }
+
+.article__intro {
+    @include font-size(20);
+    font-weight: bold;
+}

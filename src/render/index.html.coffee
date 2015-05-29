@@ -3,14 +3,17 @@ layout: 'default'
 ---
 style ->
   #if @feedr.feeds.api.image
-  backgroundImg = @feedr.feeds.api.image || '/images/berlin-wall.png'
-  text ".header {background-image: url(" + backgroundImg + ");}"
+  backgroundImg = @feedr.feeds.api.main_image.medium || '/images/berlin-wall.png'
+  text ".header {background-image: url('" + backgroundImg + "');}"
 
 header class:"header", ->
   h1 class:"header__heading", ->
     @feedr.feeds.api.title
 
 div class:'article__content', ->
+  div class:'article__intro', ->
+    text @feedr.feeds.api.summary
+
   for section in @feedr.feeds.api.sections
     switch (section.section)
       when 'panel_text'
@@ -36,10 +39,11 @@ div class:'article__content', ->
       when 'panel_image'
         for image in section.images
           figure class:'image-section', ->
-            srcset = "#{image.small} 320w,#{image.medium} 800w,#{image.large} 800w"
-            sizes="99vw"
-            img srcset: srcset, src:image.large, alt:'some alt text', class:'image-section__image'
+            img src:image.small, alt:'some alt text', class:'image-section__image', sizes:"90vw"
             if image.caption
               figcaption class:'image-section__figcaption', ->
                 text image.caption
-
+      when 'panel_video'
+        div class:'video-section', ->
+          embedUrl = 'https://www.youtube.com/embed/' + section.youtube_link
+          iframe src:embedUrl, frameborder:'0', allowfullscreen:'allowfullscreen', class:'video-section__iframe'
