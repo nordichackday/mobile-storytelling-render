@@ -11,6 +11,8 @@
 }
 
 .article__intro {
-    @include font-size(28);
+    @include font-size(32);
     font-weight: bold;
+    font-style: italic;
+    margin-top: 0.1em;
 }
