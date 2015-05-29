@@ -121,7 +121,7 @@ docpadConfig =
 		feedr:
 			feeds:
 				api:
-					url: 'http://litlabrekka.isproject.is/api/story/r?nid=16'
+					url: 'http://litlabrekka.isproject.is/api/story/r?nid=26'
 					
 		sass: 
 			outputStyle: 'compressed'			
@@ -157,6 +157,7 @@ docpadConfig =
 				else
 					next()
 
+	regenerateEvery: 10*60*1000 #Every 10 minutes
 
 # Export our DocPad Configuration
 module.exports = docpadConfig

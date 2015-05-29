@@ -2,7 +2,9 @@
 layout: 'default'
 ---
 style ->
-  text ".header {background-image: url(" + '/images/berlin-wall.png' + ");}"
+  #if @feedr.feeds.api.image
+  backgroundImg = @feedr.feeds.api.image || '/images/berlin-wall.png'
+  text ".header {background-image: url(" + backgroundImg + ");}"
 
 header class:"header", ->
   h1 class:"header__heading", ->
@@ -37,6 +39,7 @@ div class:'article__content', ->
             srcset = "#{image.small} 320w,#{image.medium} 800w,#{image.large} 800w"
             sizes="99vw"
             img srcset: srcset, src:image.large, alt:'some alt text', class:'image-section__image'
-            figcaption class:'image-section__figcaption', ->
-              text 'Some caption text'
+            if image.caption
+              figcaption class:'image-section__figcaption', ->
+                text image.caption
 
