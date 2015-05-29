@@ -1,0 +1,10 @@
+.article {
+    @include font-size(14);
+    height: 100%;
+}
+
+.article__content {
+    margin-left: 1em;
+    margin-right: 1em;
+    color: #222;
+}

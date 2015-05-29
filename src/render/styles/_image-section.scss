@@ -1,0 +1,10 @@
+.image-section {
+
+}
+
+.image-section__figcaption {
+    @include font-size(13);
+    padding: 0.5em;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}

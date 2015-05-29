@@ -1,5 +1,6 @@
 # The DocPad Configuration File
 # It is simply a CoffeeScript Object which is parsed by CSON
+tempData = require('./data');
 docpadConfig =
 
 	# =================================
@@ -14,6 +15,8 @@ docpadConfig =
 			# The production url of our website
 			# If not set, will default to the calculated site URL (e.g. http://localhost:9778)
 			url: "http://website.com"
+			
+			data: tempData
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
@@ -114,7 +117,12 @@ docpadConfig =
 				site:
 					url: false
 
-
+	plugins: [
+		sass: 
+			outputStyle: 'compressed'
+	]
+					
+					
 	# =================================
 	# DocPad Events
 

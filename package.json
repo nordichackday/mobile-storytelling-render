@@ -32,12 +32,11 @@
   },
   "dependencies": {
     "docpad": "~6.75.2",
+    "docpad-plugin-autoprefix": "~2.0.0",
+    "docpad-plugin-coffeekup": "~2.2.0",
     "docpad-plugin-eco": "~2.1.0",
     "docpad-plugin-marked": "~2.3.0",
-    "docpad-plugin-partials": "~2.9.2"
-  },
-  "devDependencies": {
-    "docpad-plugin-livereload": "~2.6.1"
+    "docpad-plugin-nodesass": "~2.7.0"
   },
   "main": "node_modules/docpad/bin/docpad-server"
 }
